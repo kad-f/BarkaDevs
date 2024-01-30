@@ -9,8 +9,8 @@ body {
   flex-direction: column;
 }
 
-img {
-  width: 600px;
+input img {
+  width: 200px;
 }
 
 button {
@@ -45,12 +45,58 @@ button {
   padding: 8px 16px;
   cursor: pointer;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
   font-size: 18px;
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero-cta {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000;
+  margin-top: 1rem;
+  display: block;
+  flex-basis: 500px;
+}
+.hero-cta p {
+  margin: 0 auto;
+  line-height: 1.7rem;
+}
+.hero-cta h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hero-image img {
+  width: 500px;
+  height: 500px;
+}
+.hero button {
+  background: #0b60b0;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.hero button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 .content {
   display: flex;
@@ -69,4 +115,8 @@ button {
   padding: 16px 32px;
   font-size: 18px;
   background-color: #eee;
+}
+
+span {
+  color: #0b60b0;
 }
