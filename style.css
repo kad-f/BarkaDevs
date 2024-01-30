@@ -19,9 +19,10 @@ button {
   border-radius: 8px;
   background: #eee;
 }
-
-
-
+hr {
+  background-color: #0b60b0;
+  height: 1px;
+}
 ul {
   list-style: none;
   padding: 0;
@@ -34,6 +35,24 @@ ul img {
   height: 50px;
   width: 50px;
 }
+.middle-links li:first-child a {
+  text-decoration: none; /* Remove the default underline */
+  position: relative;
+  display: inline-block; /* Make the link an inline-block to allow for margin-bottom */
+}
+
+.middle-links li:first-child a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0b60b0;
+  display: block;
+  margin-top: 1rem;
+}
+
 .left-links {
   align-items: center;
 }
