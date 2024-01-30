@@ -139,28 +139,31 @@ span {
   color: #0b60b0;
 }
 
+.btn {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.bottom-links {
+  display: flex;
+  gap: 10px; 
+}
 
 .btn {
-  display: inline-block; 
-  margin-right: 20px; 
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.socials {
-
-  display: inline-block; 
+.social-icons a {
+  display: inline-block;
+  margin: 0;
 }
 
-.socials li {
-  display: inline-block;  
-  margin-right: 10px; 
-}
-
-.socials img {
-  max-width: 20px; 
-  height: auto; 
-}
-
-.socials img:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
+.social-icons img {
+  width: 30px; 
+  height: 30px;
 }
