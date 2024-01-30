@@ -36,9 +36,9 @@ ul img {
   width: 50px;
 }
 .middle-links li:first-child a {
-  text-decoration: none; /* Remove the default underline */
+  text-decoration: none;
   position: relative;
-  display: inline-block; /* Make the link an inline-block to allow for margin-bottom */
+  display: inline-block;
 }
 
 .middle-links li:first-child a::after {
@@ -53,6 +53,13 @@ ul img {
   margin-top: 1rem;
 }
 
+.right-links button {
+  border: solid 3px #0b60b0;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
 .left-links {
   align-items: center;
 }
@@ -73,10 +80,11 @@ button {
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 16px 20px;
   font-size: 18px;
+  gap: 200px;
+  padding: 16px 32px;
 }
 .hero {
   display: flex;
@@ -107,9 +115,9 @@ button {
 .hero button {
   background: #0b60b0;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px;
   border-radius: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 1rem;
   cursor: pointer;
@@ -127,16 +135,32 @@ button {
   gap: 16px;
   padding: 16px 32px;
 }
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px;
-  font-size: 18px;
-  background-color: #eee;
-}
-
 span {
   color: #0b60b0;
+}
+
+
+.btn {
+  display: inline-block; 
+  margin-right: 20px; 
+}
+
+.socials {
+
+  display: inline-block; 
+}
+
+.socials li {
+  display: inline-block;  
+  margin-right: 10px; 
+}
+
+.socials img {
+  max-width: 20px; 
+  height: auto; 
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
