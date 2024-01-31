@@ -47,10 +47,29 @@ ul img {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #0b60b0;
   display: block;
   margin-top: 1rem;
+}
+.middle-links li {
+  position: relative;
+}
+
+.middle-links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #0b60b0; 
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.middle-links a:hover::before {
+  width: 100%;
 }
 
 .right-links button {
@@ -156,13 +175,13 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .btn {
   padding: 10px 20px;
   background-color: #007bff;
-  color: #fff; 
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -173,11 +192,15 @@ span {
 }
 
 .social-icons a {
-  margin-left: 10px; 
+  margin-left: 10px;
   margin-top: 20px;
 }
 
 .social-icons img {
   width: 30px;
   height: 30px;
+}
+.social-icons img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
