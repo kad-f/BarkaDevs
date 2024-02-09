@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  height: 100vh;
   margin: 0;
-  overflow: hidden;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
@@ -156,6 +154,7 @@ button {
 }
 span {
   color: #0b60b0;
+  font-weight: 600;
 }
 
 .btn {
@@ -203,4 +202,29 @@ span {
 .social-icons img:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
+}
+
+
+/* about page style */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 100px;
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+.about-cta p {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  color: gray;
+  width: 70%;
 }
