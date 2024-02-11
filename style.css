@@ -236,19 +236,20 @@ span {
   justify-content: space-evenly;
   gap: 120px;
   padding: 20px 100px;
+  height: 100vh;
 }
 
 .about h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 20px;
   width: 50%;
 }
 
 .about-cta p {
   line-height: 2.1rem;
-  font-size: 1.5rem;
-  color: gray;
+  font-size: 1rem;
+  color: #5b5f64;
   width: 50%;
 }
 
