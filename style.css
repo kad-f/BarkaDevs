@@ -237,7 +237,7 @@ span {
   justify-content: space-evenly;
   gap: 120px;
   padding: 20px 100px;
-  height: 95vh;
+  height: 100vh;
 }
 
 .about h1 {
@@ -247,6 +247,9 @@ span {
   width: 50%;
 }
 
+.about-cta {
+  margin-left: 50px;
+}
 .about-cta p {
   line-height: 2.1rem;
   font-size: 1rem;
@@ -256,7 +259,7 @@ span {
 
 .about-image {
   position: absolute;
-  top: 1;
+  top: 0;
   right: 0;
   bottom: 0;
   width: 35%;
@@ -264,5 +267,200 @@ span {
 
 .about-image img {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
+}
+
+/* team */
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.people__slide .swiper-slide {
+  display: flex;
+  width: 100%;
+  padding: 30px 10px;
+  transform: scale(0.75);
+  transition: 0.3s;
+}
+
+.people__slide .swiper-slide .people__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 276px;
+  padding: 25px 10px 30px;
+  border-radius: 48px;
+  background: linear-gradient(
+    135deg,
+    hsl(25 98% 70%),
+    hsl(23.9645 96.8689% 69.7096%),
+    hsl(21.0027 93.4957% 68.9107%),
+    hsl(16.5084 88.0997% 67.7756%),
+    hsl(11.099 81.428% 66.5035%),
+    hsl(5.69633 74.8663% 65.3092%),
+    hsl(1.56759 70.0643% 64.439%),
+    hsl(0.00000265346 68.306% 64.1176%)
+  );
+  transition: 0.3s;
+}
+
+.people__slide .swiper-slide .people__card .people__image {
+  position: relative;
+  padding: 4px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 5px solid rgba(#fff, 0.5);
+}
+
+.people__slide .swiper-slide .people__card .people__image img {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.people__slide .swiper-slide .people__card .people__info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.people__slide .swiper-slide .people__card .people__social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.people__slide .swiper-slide .people__card .people__social li {
+  padding: 0 5px;
+}
+
+.people__slide .swiper-slide .people__card .people__social li a {
+  padding: 5px;
+  color: #fff;
+}
+
+.people__slide .swiper-slide .people__card .people__name {
+  margin-bottom: 10px;
+}
+
+.people__slide .swiper-slide .people__card .people__position {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.people__slide .swiper-slide .people__card .people__desc {
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+}
+
+.people__slide .swiper-slide .people__card .people__btn {
+  display: inline-flex;
+}
+
+.people__slide .swiper-slide .people__card .people__btn a {
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: solid 1px #fff;
+  transition: 0.25s;
+}
+
+.people__slide .swiper-slide .people__card .people__btn a:hover {
+  background-color: #fff;
+  color: #e26565;
+}
+
+.people__slide .swiper-slide.swiper-slide-active {
+  animation-name: elastic1;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.people__slide .swiper-slide.swiper-slide-active {
+  animation-name: elastic1_sp;
+}
+
+.people__slide .swiper-slide:nth-child(even) .people__card {
+  transform: rotate(-5deg);
+}
+
+.people__slide .swiper-slide:nth-child(odd) .people__card {
+  transform: rotate(5deg);
+}
+
+@keyframes elastic1 {
+  0% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(1.4);
+  }
+
+  55% {
+    transform: scale(1.27);
+  }
+
+  70% {
+    transform: scale(1.36);
+  }
+
+  85% {
+    transform: scale(1.31);
+  }
+
+  100% {
+    transform: scale(1.33);
+  }
+}
+
+@keyframes elastic1_sp {
+  0% {
+    transform: scale(0.75);
+  }
+
+  40% {
+    transform: scale(1.05);
+  }
+
+  55% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1.02);
+  }
+
+  85% {
+    transform: scale(0.98);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
